@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidad Cenizas</title>
+  <style>
+    /* General */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #8e44ad, #f39c12); /* Degradado violeta y rosa */
+      color: #333;
+    }
+
+    /* Barra de navegación */
+    header {
+      background-color: #9b4d96;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #d1a7d1; /* Detalles sutiles en rosa */
+    }
+
+    header a {
+      text-decoration: none;
+      color: white;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      color: #f1c6d1;
+    }
+
+    /* Fondo de atardecer */
+    .hero {
+      background: linear-gradient(to bottom, rgba(255, 94, 77, 0.8), rgba(255, 182, 193, 0.8)), 
+                  url('https://images.unsplash.com/photo-1506748686218-558c9f9fa4a5?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhY2h8MXx8ZGF5bGlnaHQlMjBhdGFyZGVzY2V8ZW58MHx8fHwxNjcwNjA4NzM5&ixlib=rb-1.2.1&q=80&w=1080');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 20px;
+      text-align: center;
+      color: white;
+      border-bottom: 3px solid #9b4d96; /* Agregamos un borde sutil para separarlo */
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    /* Historias de Instagram */
+    .stories {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+      background: rgba(255, 255, 255, 0.7); /* Fondo blanco transparente para las historias */
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .story {
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 5px solid #9b4d96;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .story img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .story-text {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #9b4d96;
+      margin-top: 5px;
+    }
+
+    /* Publicaciones */
+    .feed-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .post {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .post:hover {
+      transform: scale(1.05);
+    }
+
+    .post img {
+      width: 100%;
+      height: auto;
+      border-bottom: 2px solid #9b4d96;
+    }
+
+    .post-footer {
+      padding: 15px;
+      background-color: #f9f9f9; /* Fondo más claro para el pie de publicación */
+    }
+
+    .post-footer p {
+      margin: 0;
+      color: #9b4d96;
+      font-weight: bold;
+    }
+    
+    .post-footer .username {
+      font-size: 1.1rem;
+      color: #333;
+    }
+
+    /* Sección de Feed con fondo degradado */
+    .feed {
+      padding: 20px;
+      background: linear-gradient(to bottom, rgba(142, 68, 173, 0.5), rgba(243, 156, 18, 0.4)); /* Fondo degradado para el feed */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Barra de Navegación -->
+  <header>
+    <a href="index.html">Inicio</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="mensajes.html">Mensajería</a>
+    <a href="subir.html">Subir Publicación</a>
+  </header>
+
+  <!-- Fondo de Atardecer y Título -->
+  <section class="hero">
+    <h1>Comunidad Cenizas</h1>
+  </section>
+
+  <!-- Historias de Instagram -->
+  <section class="stories">
+    <div class="story">
+      <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Usuario 1">
+      <div class="story-text">Usuario1</div>
+    </div>
+    <div class="story">
+      <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Usuario 2">
+      <div class="story-text">Usuario2</div>
+    </div>
+    <div class="story">
+      <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Usuario 3">
+      <div class="story-text">Usuario3</div>
+    </div>
+    <div class="story">
+      <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Usuario 4">
+      <div class="story-text">Usuario4</div>
+    </div>
+  </section>
+
+  <!-- Publicaciones -->
+  <section class="feed">
+    <h2>Últimas publicaciones</h2>
+    <div class="feed-container">
+      <!-- Publicación 1 -->
+      <div class="post">
+        <img src="https://via.placeholder.com/600x400" alt="Post 1">
+        <div class="post-footer">
+          <span class="username">Usuario1</span>
+          <p>Mi primer post en la comunidad</p>
+        </div>
+      </div>
+
+      <!-- Publicación 2 -->
+      <div class="post">
+        <img src="https://via.placeholder.com/600x400" alt="Post 2">
+        <div class="post-footer">
+          <span class="username">Usuario2</span>
+          <p>Explorando nuevas aventuras</p>
+        </div>
+      </div>
+
+      <!-- Publicación 3 -->
+      <div class="post">
+        <img src="https://via.placeholder.com/600x400" alt="Post 3">
+        <div class="post-footer">
+          <span class="username">Usuario3</span>
+          <p>Momentos de creatividad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
