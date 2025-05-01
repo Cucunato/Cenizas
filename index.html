@@ -9,25 +9,28 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #fffffb;
-      color: #3e3e3e;
+      background-color: #121212; /* negro oscuro */
+      color: #f5f5f5; /* texto claro */
     }
 
     header {
-      background-color: #f5ece2;
+      background-color: #1e1e1e; /* gris oscuro */
       padding: 1.5rem;
       text-align: center;
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3rem;
+      font-size: 4rem;
       margin: 0;
-      color: #d7b297;
+      color: #e63946;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
     nav {
-      background-color: #ebd9c9;
+      background-color: #2c2c2c;
       padding: 0.8rem;
       display: flex;
       justify-content: center;
@@ -36,28 +39,30 @@
 
     nav a {
       text-decoration: none;
-      color: #5b4636;
+      color: #f5f5f5;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #d7b297;
+      color: #e63946;
     }
 
     .hero {
-      background: linear-gradient(rgba(245, 236, 226, 0.6), rgba(245, 236, 226, 0.6)), url('https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1950&q=80');
+      background: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), 
+                  url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1950&q=80');
       background-size: cover;
       background-position: center;
       text-align: center;
       padding: 6rem 1rem;
-      color: #3e3e3e;
+      color: #f5f5f5;
     }
 
     .hero h2 {
       font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      color: #ff6b6b;
     }
 
     .hero p {
@@ -67,10 +72,11 @@
     }
 
     footer {
-      background-color: #e1c5b0;
+      background-color: #1e1e1e;
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
+      color: #aaaaaa;
     }
   </style>
 </head>
@@ -96,3 +102,4 @@
   </footer>
 </body>
 </html>
+
